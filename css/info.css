@@ -1,0 +1,124 @@
+:root {
+  --bg: #e5fbe7;
+  --card: #ffffff;
+  --ink: #0a0c10;
+  --brand: #2bb673;
+  --muted: #5b6a7b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: var(--bg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink);
+}
+
+body {
+  display: block;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.title {
+  margin: .2rem 0;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+}
+
+.career {
+  color: var(--brand);
+  font-weight: 700;
+  margin: .2rem 0 .6rem 0;
+  font-size: 1.1rem;
+}
+
+.student {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid rgba(10,12,16,.06);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 16px 0;
+  box-shadow: 0 10px 30px rgba(16,24,40,.05);
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+.tags {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.tags li {
+  background: rgba(43,182,115,.12);
+  color: #17764a;
+  padding: .4rem .8rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid rgba(43,182,115,.2);
+  display: block;
+  margin: 0 auto .4rem auto;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+figcaption {
+  font-size: .95rem;
+  color: var(--ink);
+}
+
+footer {
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
